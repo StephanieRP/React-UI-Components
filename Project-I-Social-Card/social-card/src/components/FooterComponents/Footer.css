@@ -1,0 +1,10 @@
+i {
+  color: gray;
+  padding: 20px;
+}
+
+.icon-content {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
