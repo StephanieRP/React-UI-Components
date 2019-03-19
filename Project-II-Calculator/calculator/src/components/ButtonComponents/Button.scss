@@ -1,0 +1,24 @@
+.action {
+  color: white;
+  background: $actionColor;
+  div {
+    @include borders();
+    padding: 0.845rem 2.76rem;
+    font-size: 4rem;
+    font-weight: 200;
+  }
+}
+
+.numbers {
+  .numbers-button {
+    padding: 2rem 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    @include borders();
+    font-weight: 300;
+  }
+
+  .row {
+    display: flex;
+  }
+}
