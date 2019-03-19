@@ -1,0 +1,12 @@
+i {
+  color: gray;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.icon-content {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  cursor: pointer;
+}
