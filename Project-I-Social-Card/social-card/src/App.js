@@ -14,11 +14,9 @@ const appStyle = {
 const App = () => {
   return (
     <div style={appStyle}>
-      <div>
-        <HeaderContainer />
-        <CardContainer />
-        <Footer />
-      </div>
+      <HeaderContainer />
+      <CardContainer />
+      <Footer />
     </div>
   );
 };
