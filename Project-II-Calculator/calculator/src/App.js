@@ -7,11 +7,17 @@ import NumberButton from "./components/ButtonComponents/NumberButton";
 const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3];
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      total: 0
+    };
+  }
   render() {
     return (
       <div className="main-container">
         <div className="display-container">
-          <CalculatorDisplay />
+          <CalculatorDisplay display={this.state.total} />
         </div>
         <div className="button-container">
           <div className="numbers-container">
