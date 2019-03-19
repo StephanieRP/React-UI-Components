@@ -10,6 +10,7 @@
   background: gray;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  padding-bottom: 10px;
 }
 
 .card-img {

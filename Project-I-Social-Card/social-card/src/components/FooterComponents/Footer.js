@@ -1,31 +1,47 @@
 import React from "react";
 import "./Footer.css";
 
-const toggleNum = e => {
-  let num = document.querySelectorAll(".number");
-  num.forEach(number => {
-    console.log(number);
-    let count = 1;
-    return (number.innerHTML = count++);
-  });
-};
+// const toggleNum = e => {
+//   let num = document.querySelectorAll(".number");
+//   num.forEach(number => {
+//     return (number.innerHTML = this.state++);
+//   });
+// };
 
-const Footer = () => {
-  return (
-    <div className="icon-content">
-      <div>
-        <i className="far fa-comment" onClick={toggleNum} />
-        <span className="number" />
-      </div>
-      <i className="fas fa-sync-alt" />
-      <div>
-        <i className="far fa-heart" onClick={toggleNum} />
-        <span className="number" />
-      </div>
+class Footer extends React.Component {
+  state = {
+    count: 0,
+    count1: 0
+  };
+  render() {
+    return (
+      <footer className="icon-content">
+        <div>
+          <i
+            className="far fa-comment"
+            onClick={() =>
+              this.setState(prevState => ({
+                count: prevState.count + 1
+              }))
+            }
+          />
+          <span className="number">{this.state.count}</span>
+        </div>
+        <i className="fas fa-sync-alt" />
+        <div>
+          <i
+            className="far fa-heart"
+            onClick={() =>
+              this.setState(prevState => ({ count1: prevState.count1 + 1 }))
+            }
+          />
+          <span className="number"> {this.state.count1}</span>
+        </div>
 
-      <i className="far fa-envelope" />
-    </div>
-  );
-};
+        <i className="far fa-envelope" />
+      </footer>
+    );
+  }
+}
 
 export default Footer;
