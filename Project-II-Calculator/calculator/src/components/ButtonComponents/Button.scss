@@ -9,16 +9,15 @@
   }
 }
 
-.numbers {
-  .numbers-button {
-    padding: 2rem 2.5rem;
-    font-size: 2rem;
-    text-align: center;
-    @include borders();
-    font-weight: 300;
-  }
+.numbers-button {
+  padding: 2rem 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+  @include borders();
+  font-weight: 300;
+  cursor: pointer;
+}
 
-  .row {
-    display: flex;
-  }
+.special {
+  padding: 2rem;
 }

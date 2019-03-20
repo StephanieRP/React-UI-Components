@@ -2,16 +2,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 .main-container {
   width: 30%;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .button-container {
   display: flex;
-  width: 100%;
+}
+
+.numbers-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-row: 100px 100px;
 }
 
 .action {
@@ -25,15 +31,17 @@ body {
   font-weight: 200;
 }
 
-.numbers .numbers-button {
+.numbers-button {
   padding: 2rem 2.5rem;
   font-size: 2rem;
   text-align: center;
   border: #979797 solid 1px;
   font-weight: 300;
+  cursor: pointer;
 }
-.numbers .row {
-  display: flex;
+
+.special {
+  padding: 2rem;
 }
 
 .display {
