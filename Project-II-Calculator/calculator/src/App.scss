@@ -1,0 +1,14 @@
+.main-container {
+  width: 30%;
+  margin: 20px auto;
+}
+
+.button-container {
+  display: flex;
+}
+
+.numbers-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-row: 100px 100px;
+}
